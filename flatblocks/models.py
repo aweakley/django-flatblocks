@@ -10,7 +10,7 @@ class FlatBlock(models.Model):
     Think of a flatblock as a flatpage but for just part of a site. It's
     basically a piece of content with a given name (slug).
     """
-    slug = models.CharField(max_length=255, unique=True, 
+    slug = models.CharField(max_length=255,  
                 verbose_name=_('Slug'),
                 help_text=_("A unique name used for reference in the templates"))
     content = models.TextField(verbose_name=_('Content'), blank=True, null=True)
